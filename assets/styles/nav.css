@@ -1,0 +1,87 @@
+*{
+    font-family: 'Poppins', sans-serif !important;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+.loader {
+    position: absolute;
+    background: #FFFFFF;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2147483647;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav, 
+.vertical-menu {
+    display: flex;
+    justify-content: center;
+    background-color: #FFFFFF;
+}
+
+.nav .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav .content .menu ul {
+    display: flex;
+    align-items: center;
+}
+
+.nav .content .menu ul > li{
+    padding: 0.5rem 1rem;
+}
+
+.nav .vertical-menu ul > li {
+    padding: 0.5rem 1rem 0.5rem 0;
+}
+
+.nav .vertical-menu ul > li a,
+.nav .content .menu ul > li a 
+{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+}
+
+.hamburger-container,
+.nav .vertical-menu {
+    display: none;
+}
+
+.nav .vertical-menu {
+    position: absolute;
+    width: 100%;
+    background-color: #FFFFFF;
+    top: 50px;
+}
+
+@media screen and (max-width: 800px) {
+    .nav .content .menu ul > li a,
+    .nav .vertical-menu ul > li a {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .nav .content .menu {
+        display: none;
+    }
+
+    .hamburger-container {
+        display: block;
+    }
+}

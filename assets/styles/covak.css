@@ -1,0 +1,340 @@
+*{
+    font-family: 'Poppins', sans-serif !important;
+}
+
+html, body {
+    width: 100%;
+    box-sizing: border-box;
+    height: 100%;
+    min-height: 100vh;
+}
+
+.container{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.main {
+    background: linear-gradient(180deg, #0000007d 0%, #afafafb4 32%, #ffffff00 100%), url("../media/casestudies/stethoscope.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    padding-top: 77px;
+}
+
+.main .heading{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 6rem;
+    color: #FFFFFF;
+}
+
+.main .subheading {
+    width: auto;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 3rem;
+    color: #3C3C3C;
+    background: #FFFFFF;
+    border-radius: 50px 0px 0px 50px;
+    padding: 17px 30px;
+    top: calc(77px + 6rem);
+    right: 0;
+    left: calc((100vw - 70%)/2);
+}
+
+.full-width{
+    width: 100% !important;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.main .info{
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: justify;
+    color: #000000;
+    margin-top: 5rem;
+}
+
+.main .link-container{
+    position: absolute;
+    bottom: 0px;
+    width: inherit;
+    text-align: center;
+}
+
+.main .link {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #000000;
+    cursor: pointer;
+}
+
+/* information */
+.information{
+    padding: 123px 0;
+}
+
+.information .challenges, 
+.information .benifits{
+    margin-bottom: 81px;
+}
+
+.information .subheading{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+    color: #3C3C3C;
+    margin-bottom: 18px;
+}
+
+.information .info , 
+.information li{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: justify;
+    color: #000000;
+}
+
+.covak-img {
+    width: 100%;
+    margin: 77px 0;
+}
+
+/* packaging */
+.image-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.image-container img{
+    width: 45%;
+    height: 45%;
+}
+
+/* footer */
+.footer {
+    width: inherit;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer > div{
+    flex: 1 1 340px;
+    box-sizing: border-box;
+}
+
+.footer-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .quick-links{
+    display: flex;
+    justify-content: space-between;
+    background-color: #02C2F7;
+    padding: 3rem;
+
+}
+
+.footer .links{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .links a {
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-size: 1rem;
+    line-height: 1rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+}
+
+.footer .connect{
+    font-weight: 700;
+    text-align: right;
+    font-size: 0.6rem;
+    line-height: 1rem;
+}
+
+.footer .connect .first{
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+}
+
+.footer .connect .second{
+    color: #FFFFFF;
+    font-size: 0.7rem;
+    line-height: 1.2rem;
+    letter-spacing: 0.1rem;
+}
+
+#get-in-touch-btn{
+    background: #FFFFFF;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 24px 10px 50px;
+    margin-top: 1rem;
+    font-family: "popins";
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 500px) {
+    .container{
+        width: 80%;
+    }
+
+    .main .heading{
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    .main .subheading {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        top: calc(77px + 4rem);
+        left: calc((100vw - 80%)/2);
+    }
+
+    .main .info{
+        font-size: 0.8rem;
+        line-height: 1.1rem;
+    }
+
+    .information .subheading{
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+
+    .information .info , 
+    .information li{
+        font-size: 0.8rem;
+        line-height: 1.1rem;
+    }
+
+    /* packaging */
+    .image-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-container img{
+        margin-top: 20px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .footer > div{
+        width: inherit;
+        padding: 2rem;
+    }
+
+    .footer .quick-links {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer .connect,
+    .footer .quick-links {
+        text-align: center;
+    }
+}
+
+
+/* tablet */
+@media screen and (min-width: 499px) and (max-width: 768px) {
+    .container{
+        width: 80%;
+    }
+
+    .main .heading {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+
+    .main .info,
+    .information .info, .information li { 
+        font-size: 0.8rem;
+        line-height: 1.3rem;
+    }
+
+    .main .subheading {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        left: calc((100vw - 80%)/2);
+    }
+
+    .footer .links a{
+        font-size: 0.7rem;
+        line-height: 1.5rem;
+        margin: unset;
+    }
+
+    .footer .connect .first {
+        font-size: 0.6rem;
+        line-height: 1rem;
+    }
+
+    .footer .connect .second {
+        font-size: 0.6rem;
+    }
+}
+
+
+@media screen and (min-width: 1700px) {
+
+    .main .heading{
+        font-size: 4rem;
+        line-height: 6rem;
+    }
+
+    .main .info{
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .main .link{
+        font-size: 2.3rem;
+        line-height: 2.5rem;
+    }
+
+    .information .subheading{
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    
+    .information .info, 
+    .information li{
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    
+    .footer-img img{
+        width: 348px;
+        height: 80px;
+    }
+}

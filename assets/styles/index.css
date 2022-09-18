@@ -1,0 +1,258 @@
+*{
+    font-family: 'Poppins', sans-serif !important;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+html, body {
+    width: 100%;
+    box-sizing: border-box;
+    height: 100%;
+    min-height: 100vh;
+}
+
+.text-blue{
+    color: #3278CD;
+}
+
+.text-red{
+    color: #ED1B24;
+}
+
+.landing{
+    background-image: url("../media/landing/simon.png");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    width: 80%;
+}
+
+.heading{
+    /* font-family: 'Poppins', sans-serif; */
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.075em;
+    color: #FFFFFF;
+    margin-top: 55px;
+}
+
+/* we */
+.we {
+    width: 100%;
+    height: 1028px;
+    padding: 176px 0px;
+    box-sizing: border-box;
+    background: linear-gradient(115deg, rgb(33, 210, 254) 0%, rgb(78, 153, 254) 72%, rgb(112, 110, 255) 100%);
+    display: flex;
+    justify-content: center;
+}
+
+.we-container {
+    display: flex;
+    align-items: center;
+}
+
+.we .heading{
+    font-size: 12.5rem;
+    font-weight: 700;
+    line-height: 19rem;
+    color: #FFFFFF;
+    margin-top: 0;
+}
+
+.we .secondary-heading{
+    /* font-family: 'Poppins', sans-serif; */
+    font-style: normal;
+    font-weight: 900;
+    font-size: 2rem;
+    line-height: 4.5rem;
+    color: #FFFFFF;
+}
+
+.we .info{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 30px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    margin-bottom: 23px;
+}
+
+.we .btn{
+    position: absolute;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.1rem;
+    letter-spacing: 0em;
+    padding: 22px 37px;
+    border: none;
+    border-radius: 60px;
+    color: #4F4F4F;
+    margin-top: 40px;
+}
+
+/* count on us */
+.count-on-us{
+    width: 100%;
+    height: auto;
+    padding: 121px 0px;
+    box-sizing: border-box;   
+    display: flex;
+    justify-content: center;
+}
+
+.count-on-us .heading {
+    /* font-family: 'Poppins', sans-serif; */
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 96px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #363636;
+    margin-bottom: 74px;
+}
+
+.count-on-us .subheading {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 67px;
+    letter-spacing: 0.075em;
+    text-align: left;
+}
+
+.count-on-us .card-container {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+.count-on-us .card {
+    height: auto;
+    min-height: 320px;
+    background: #FFFFFF;
+    border: 0.5px solid #000000;
+    box-shadow: 4px 4px 3px -11px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    flex: 1 1 250px;
+    margin: 10px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.count-on-us .info {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    color: #000000;
+}
+
+/* phone */
+@media screen and (max-width: 500px) {
+    .landing .heading {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.075em;
+    }
+
+    .we-container{
+        flex-direction: column;
+    }
+
+    .we .heading {
+        font-size: 96px;
+        line-height: 144px;
+        text-align: center;
+    }
+
+    .we .secondary-heading {
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    .we .info {
+        font-size: 15px;
+        line-height: 22px;
+        text-align: center;
+        letter-spacing: 0.075em;
+    }
+
+    #offerings-btn{
+        display: none;
+    }
+
+    .count-on-us .heading {
+        font-size: 1.5rem;
+        line-height: 4rem;
+    }
+
+    .count-on-us .subheading {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .count-on-us .info {
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+}
+
+/* tablet */
+@media screen and (min-width: 500px) and (max-width: 768px) {
+
+    .count-on-us .subheading {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .count-on-us .info {
+        font-size: 1rem;
+    }
+}
+
+
+@media screen and (min-width: 1700px) {
+    .heading{
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+
+    .we .heading {
+        font-size: 320px;
+        line-height: 480px;
+        letter-spacing: 0.075em;
+    }
+
+    .we .secondary-heading {
+        font-size: 50px;
+        line-height: 75px;
+    }
+    
+    .we .info{
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .we .btn{
+        font-size: 2rem;
+        line-height: 2.5rem;
+        margin-top: 87px;
+    }
+}
+
+
+

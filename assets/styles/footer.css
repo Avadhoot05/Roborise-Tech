@@ -1,0 +1,123 @@
+*{
+    font-family: 'Poppins', sans-serif !important;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+
+/* footer */
+.footer {
+    width: inherit;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer > div{
+    flex: 1 1 340px;
+    box-sizing: border-box;
+}
+
+.footer-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .quick-links{
+    display: flex;
+    justify-content: space-between;
+    background-color: #02C2F7;
+    padding: 3rem;
+
+}
+
+.footer .links{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .links a {
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-size: 1rem;
+    line-height: 1rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+}
+
+.footer .connect{
+    font-weight: 700;
+    text-align: right;
+    font-size: 0.6rem;
+    line-height: 1rem;
+}
+
+.footer .connect .first{
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+}
+
+.footer .connect .second{
+    color: #FFFFFF;
+    font-size: 0.7rem;
+    line-height: 1.2rem;
+    letter-spacing: 0.1rem;
+}
+
+#get-in-touch-btn{
+    background: #FFFFFF;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 24px 10px 50px;
+    margin-top: 1rem;
+    font-family: "popins";
+    cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+    .footer > div{
+        width: inherit;
+        padding: 2rem;
+    }
+
+    .footer .quick-links {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer .connect,
+    .footer .quick-links {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 768px) {
+    .footer .links a{
+        font-size: 0.7rem;
+        line-height: 1.5rem;
+        margin: unset;
+    }
+
+    .footer .connect .first {
+        font-size: 0.6rem;
+        line-height: 1rem;
+    }
+
+    .footer .connect .second {
+        font-size: 0.6rem;
+    }
+}
+
+@media screen and (min-width: 1700px) {
+    .footer-img img{
+        width: 348px;
+        height: 80px;
+    }
+}
