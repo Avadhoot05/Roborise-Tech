@@ -139,7 +139,7 @@ html, body {
 }
 
 .separator{
-    width: 2px;
+    width: 1px;
     height: auto;
     background-color: #5C5C5C;
 }
@@ -160,7 +160,7 @@ html, body {
 .support .info {
     text-align: center;
     font-size: 1rem;
-    line-height: 1rem;
+    line-height: 1.5rem;
     color: #000000;
     margin-bottom: 4rem;
 }
@@ -208,6 +208,7 @@ html, body {
 
 /* testimonial */
 .testimonial {
+    position: relative;
     background: linear-gradient(90deg, #00172F 0%, #00172F 100%);
 }
 
@@ -216,19 +217,183 @@ html, body {
 {
     color: #FFFFFF;
     text-align: center;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
 }
 
+.testimonial .test-bottom-img{
+    position: absolute;
+    bottom: 0;
+    width: 30%;
+    height: auto;
+}
+
+/* partners */
+.partners{
+    display: flex;
+    justify-content: center;
+    background-color: #000000;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.partners .heading{
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.partners .info{
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.customer-logos{
+    background: #FFFFFF;
+    box-shadow: 4px 4px 3px -11px rgba(0, 0, 0, 0.25);
+    border-radius: 200px;
+    margin-top: 3rem;
+    margin-bottom: 2.5rem;
+}
+  /* Slider */
+  
+
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
 
 
 /* phone */
 @media screen and (max-width: 500px) {
     .landing .heading, 
-    .value .heading {
+    .value .heading, 
+    .partners .heading {
         font-size: 2rem;
         line-height: 3rem;
     }
     
-    .landing .info{
+    .landing .info, 
+    .value .info, 
+    .we .info, 
+    .support .info, 
+    .partners .info{
         font-size: 0.8rem;
         line-height: 1rem;
     }
@@ -242,26 +407,23 @@ html, body {
         line-height: 1.5rem;
     }
     
-    .value .info {
-        font-size: 0.8rem;
-        line-height: 1rem;
-    }
-
     .we .info, 
     .support .info {
-        font-size: 0.8rem;
-        line-height: 1rem;
         overflow-wrap: break-word;
     }
 
     .separator{
         width: 100%;
-        height: 2px;
+        height: 1px;
     }
 
     .testimonial{
         font-size: 0.8rem;
         line-height: 1rem;
+    }
+
+    .testimonial .test-bottom-img{
+        width: 50%;
     }
 
     .we .content ,
@@ -292,7 +454,7 @@ html, body {
 
     .separator{
         width: 100%;
-        height: 2px;
+        height: 1px;
     }
 
     .we .content ,
