@@ -1,0 +1,245 @@
+*{
+    font-family: 'Poppins', sans-serif !important;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+html, body {
+    width: 100%;
+    box-sizing: border-box;
+    height: 100%;
+    min-height: 100vh;
+}
+
+.container{
+    width: 80%;
+}
+
+.main {
+    background: linear-gradient(180deg, #0000007d 0%, #afafafb4 32%, #ffffff00 100%), url("../media/casestudies/stethoscope.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    padding-top: 77px;
+    display: flex;
+    justify-content: center;
+}
+
+.main .heading{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.5rem;
+    line-height: 6rem;
+    color: #FFFFFF;
+}
+
+.main .subheading {
+    width: auto;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 3rem;
+    color: #3C3C3C;
+    background: #FFFFFF;
+    border-radius: 50px 0px 0px 50px;
+    padding: 17px 30px;
+    top: calc(149px + 6rem);
+    right: 0;
+    left: calc((100vw - 80%)/2);
+}
+
+.absolute {
+    position: absolute;
+}
+
+.main .link-container{
+    position: absolute;
+    bottom: 0px;
+    width: inherit;
+    text-align: center;
+}
+
+.main .link {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #000000;
+    cursor: pointer;
+}
+
+/* SECTOR */
+.sector{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sector .heading{
+    padding: 1rem 3.5rem 1rem 3.5rem;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    color: #000000;
+    text-transform: capitalize;
+}
+
+.sector .vertical-tabs{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.sector .tab-item{
+    padding: 1.5rem 1rem 1.5rem 4rem;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 2rem;
+    cursor: pointer;
+}
+
+.content-container{
+    padding: 5rem 6rem;
+    background-color: #000000;
+}
+
+.sector .content .info {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #FFFFFF;
+}
+
+.sector .img-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sector .img-container img{
+    width: 45%;
+    height: auto;
+    margin-top: 2rem;
+}
+
+
+
+
+
+@media screen and (max-width: 500px) {
+    .container{
+        width: 80%;
+    }
+
+    .main .heading{
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    .main .subheading {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        top: calc(77px + 4rem);
+        left: calc((100vw - 80%)/2);
+    }
+}
+
+/* tablet */
+@media screen and (min-width: 499px) and (max-width: 768px) {
+    .container{
+        width: 80%;
+    }
+
+    .main .heading {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+
+    .main .subheading {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        left: calc((100vw - 80%)/2);
+    }
+
+    .sector .heading{
+        padding: 1rem 3.5rem 1rem 2rem;
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    .sector .vertical-tabs{
+        width: 200px;
+    }
+
+    .sector .tab-item{
+        padding: 1rem 0.5rem 1rem 2rem;
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+
+    .content-container{
+        padding: 5rem 4rem;
+    }
+    
+    .sector .content .info {
+        font-size: 0.8rem;
+        line-height: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .sector {
+        flex-direction: column;
+    }
+
+    .sector .vertical-tabs{
+        width: 100%;
+        padding-bottom: 0;
+    }
+
+    .sector ul {
+        display: flex;
+        overflow: scroll;
+    }
+
+    .sector .tab-item{
+        padding: 1.5rem 1rem 1.5rem 1rem;
+        font-size: 0.8rem;
+        line-height: 1.5rem;
+        white-space: nowrap;
+    }
+
+    .sector .content .info {
+        font-size: 0.8rem;
+        line-height: 1.1rem;
+        text-align: center;
+    }
+
+    .content-container {
+        padding: 2rem 3rem;
+    }
+
+    .sector .img-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .sector .img-container img{
+        width: 80%;
+        height: auto;
+    }
+}
+
+
+@media screen and (min-width: 1700px) {
+
+    .main .heading{
+        font-size: 4rem;
+        line-height: 6rem;
+    }
+
+    .main .link{
+        font-size: 2.3rem;
+        line-height: 2.5rem;
+    }
+}

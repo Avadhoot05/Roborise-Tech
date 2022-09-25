@@ -40,17 +40,13 @@ html, body {
     background: #FFFFFF;
     border-radius: 50px 0px 0px 50px;
     padding: 17px 30px;
-    top: calc(77px + 6rem);
+    top: calc(149px + 6rem);
     right: 0;
     left: calc((100vw - 70%)/2);
 }
 
 .full-width{
     width: 100% !important;
-}
-
-.hidden {
-    visibility: hidden;
 }
 
 .absolute {
