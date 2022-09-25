@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./assets/styles/about.css">
     <link rel="stylesheet" href="./assets/styles/form.css">
     <link rel="stylesheet" href="./assets/styles/footer.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -64,7 +65,7 @@
 
     <div class="landing">
         <div class="landing-content">
-            <div class="container">
+            <div class="container" data-aos="fade-up">
                 <h1 class="heading">About RoboRise</h1>
                 <p class="info">RoboRise Technologies is one of the most enthusiastic and innovative 
                     companies when it comes to automation. We are a team of professionals, who will provide 
@@ -86,25 +87,25 @@
             
             <div class="two-col">
                 <div class="col1">
-                    <div class="card">
+                    <div class="card" data-aos="fade-down-right">
                         <h3 class="subheading">Commitment is the key.</h3>
                         <p class="info">If we do it, it matters the most to us. For us to execute a project flawlessly, we need to attach ourselves to it the way it means to you. It becomes equally important to us, as it is to you.</p>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="fade-right">
                         <h3 class="subheading">Faster execution, Quick feedback, Low lead time.</h3>
                         <p class="info">We believe that everyone’s time is important. That’s the reason we don’t waste any of it. Right from quoting till the execution, we make sure everything is fast, because we can’t keep your business waiting.</p>                                                         
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="fade-up-right">
                         <h3 class="subheading">Curiosity fuels growth. </h3>
                         <p class="info">We are always learning, adapting & growing with each passing day. Exploring & seeking answers to those thousands of questions wandering in our minds is something which keeps us occupied.</p>                                                 
                     </div>
                 </div>
-                <div class="col2">
+                <div class="col2" data-aos="fade-down-left">
                     <div class="card">
                         <h3 class="subheading">Customer satisfaction is everything. </h3>
                         <p class="info">Its not just a matter of living upto the deadlines & finishing off the work beforehand. We believe in delivering value equivalent to each & every second spent on the project. </p>                                                       
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="fade-up-left">
                         <h3 class="subheading">Curiosity fuels growth. </h3>
                         <p class="info">We make sure that our clients are 100% convinvced with the solutions. It’s not just about delivering what you asked for, we believe it’s always about a little more. Along with building solutions, we build relations too. </p>                                               
                     </div>
@@ -115,7 +116,7 @@
 
     <!-- we are -->
     <div class="we">
-        <div class="container">
+        <div class="container" data-aos="fade-up">
             <h2 class="heading">We are</h2>
             <div class="content">
                 <div class="content1">
@@ -138,7 +139,7 @@
     </div>
 
     <div class="support">
-        <div class="container">
+        <div class="container" data-aos="fade-up">
             <h2 class="heading">We Support</h2>
             <div class="content">
                 <div class="content1">
@@ -161,7 +162,7 @@
 
     <!-- partners -->
     <div class="partners">
-        <div class="container">
+        <div class="container" data-aos="fade-up">
             <h2 class="heading">Delivering Solutions,<br>Fostering Relations.</h2>
             <div class="customer-logos slider">
                 <div class="slide"><img src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg"></div>
@@ -178,7 +179,7 @@
 
     <!-- testimoniel -->
     <div class="testimonial">
-        <div class="test-slider container">
+        <div class="test-slider container" data-aos="fade-up">
             <!-- repeat content div for corousel -->
             
             <div class="content">
@@ -213,7 +214,7 @@
 
     <!-- form -->
     <div class="form">
-        <div class="container form-container">
+        <div class="container form-container" data-aos="fade-up">
             <h2 class="heading">Anything to talk about? Do let us know, we’ll get back. </h2>
             <form class="actual-form">
                 <div class="input-rows">
@@ -254,6 +255,9 @@
             </div>
         </div>
     </div>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

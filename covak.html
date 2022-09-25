@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="./assets/styles/reset.css">
     <link rel="stylesheet" href="./assets/styles/nav.css">
     <link rel="stylesheet" href="./assets/styles/covak.css">
+    <link rel="stylesheet" href="./assets/styles/footer.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -63,7 +66,7 @@
         <div class="container">
             <h1 class="heading">Case study</h1>
             <h2 class="covak subheading absolute">COVAK: A Covid Care Robot.</h2>
-            <p class="covak info">Healthcare systems globally were stressed by the sudden 
+            <p class="covak info"  data-aos="fade-up">Healthcare systems globally were stressed by the sudden 
                 onslaught of the Coronavirus. The spread of the virus can be reduced by 
                 practicing social distancing and taking the required precautions, a luxury 
                 that the frontline workers do not have while performing their duties in close 
@@ -71,13 +74,15 @@
                 by automating regular tasks in caregiving and COVID-19 monitoring.
             </p>
             <div class="link-container">
-                <a class="link">See How</a>    
+                <a class="link" href="#covak-information">See How</a>    
+                <a class="link" href="#covak-information"><img loading="lazy" alt="go to" src="./assets/media/nav/expand.png" width="20" height="20"> </a>    
+
             </div>
         </div>
     </div>
 
-    <div class="information">
-        <div class="container">
+    <div id="covak-information" class="information">
+        <div class="container" data-aos="fade-up">
 
             <div class="challenges">
                 <h3 class="subheading">Challenges</h3>
@@ -91,7 +96,7 @@
                 </p>
             </div>
             
-            <div class="solution">
+            <div class="solution" data-aos="fade-up">
                 <h3 class="subheading">Solution</h3>
                 <p class="info">With COVAK,</p>
                 <ul style="list-style-type: disc">
@@ -107,9 +112,9 @@
                 </p>
             </div>
 
-            <img loading="lazy" class="covak-img" lazyload src="./assets/media/casestudies/image 67.jpg">
+            <img loading="lazy" class="covak-img" lazyload src="./assets/media/casestudies/image 67.jpg" data-aos="fade-up">
 
-            <div class="benifits">
+            <div class="benifits" data-aos="fade-up">
                 <h3 class="subheading">Benifits</h3>
                 <ul style="list-style-type: disc">
                     <li>Capable of measuring Blood Pressure, Heart Rate, O2 Saturation, Temperature, and Pulse.</li>
@@ -124,7 +129,7 @@
 
             </div>
 
-            <div class="media">
+            <div class="media" data-aos="fade-up">
                 <h3 class="subheading">Media</h3>
                 <img loading="lazy" class="covak-img" src="./assets/media/casestudies/image 66.jpg">
             </div>
@@ -154,5 +159,10 @@
             </div>
         </div>
     </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

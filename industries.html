@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./assets/styles/nav.css">
     <link rel="stylesheet" href="./assets/styles/industries.css">
     <link rel="stylesheet" href="./assets/styles/footer.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -61,7 +63,7 @@
     </div>
 
     <div class="main">
-        <div class="container">
+        <div class="container" data-aos="fade-up">
             <h1 class="industry heading">Powering Industries, Redefining future. </h1>
             <h2 class="industry subheading absolute">Catering to all the industrial needs across domains</h2>
             <div class="link-container">
@@ -90,7 +92,7 @@
         </div>
 
         <div class="content-container">
-            <div id="ecom-content" class="content">
+            <div id="ecom-content" class="content" data-aos="fade-up">
                 <p class="info">Despite its current size, the e-commerce industry is still evolving - and it's only growing bigger roughly valued at $4.2 Trillion. With high competition, there’s so much more potential for businesses that can be unlocked with better automation systems and ultimately leading to a huge paradigm shift in the industry. Scalable and cost-effective automation systems can be designed for the Omni-Channel user experience that manages a large number of SKUs, various order profiles, seasonal demands, sortation, shorter order fulfillment cycles, inventory management, and returns handling.</p>
                 <div class="img-container">
                     <img loading="lazy" src="./assets/media/industry/ecom1.png" alt="Ecommerce image1">
@@ -159,5 +161,10 @@
             </div>
         </div>
     </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

@@ -26,6 +26,11 @@
     align-items: center;
 }
 
+.footer-img > img {
+    width: 40%;
+    height: auto;
+}
+
 .footer .quick-links{
     display: flex;
     justify-content: space-between;
@@ -95,6 +100,10 @@
     .footer .connect,
     .footer .quick-links {
         text-align: center;
+    }
+
+    .footer-img > img {
+        width: 50%;
     }
 }
 

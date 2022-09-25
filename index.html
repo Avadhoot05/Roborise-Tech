@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./assets/styles/index.css">
     <link rel="stylesheet" href="./assets/styles/form.css">
     <link rel="stylesheet" href="./assets/styles/footer.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -19,14 +21,18 @@
     <script defer src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
     <script defer src="./assets/scripts/info_slider.js"></script>
-
+    
     <base href="https://avadhoot05.github.io/Roborise-Tech/">
     <title>RRT</title>
 </head>
 <body>
+
+    <!-- loader -->
     <div class="loader">
         <img loading="lazy" alt="loader" src="./assets/media/loader/loader.gif" width="30" height="30">
     </div>
+
+    <!-- nav -->
     <div class="nav">
         <div class="container">
             <div class="content">
@@ -62,14 +68,14 @@
 
     <!-- Landing -->
     <div class="landing">
-        <div class="container">
+        <div class="container" data-aos="fade-up">
             <h1 class="heading">AUGMENTING AUTOMATION<br>SIMPLIFYING ROBOTICS</h1>
         </div>
     </div>
 
     <!-- we -->
     <div class="we">
-        <div class="container we-container">
+        <div class="container we-container" data-aos="fade-up">
             <div>
                 <h2 class="heading">We</h2>
             </div>
@@ -104,7 +110,7 @@
 
     <!-- count on us -->
     <div class="count-on-us">
-        <div class="container">
+        <div class="container" data-aos="fade-up">
             <h2 class="heading">Why count on us?</h2>
             <div class="card-container">
                 <div class="card">
@@ -135,7 +141,7 @@
 
     <!-- form -->
     <div class="form">
-        <div class="container form-container">
+        <div class="container form-container" data-aos="fade-up">
             <h2 class="heading">Anything to talk about? Do let us know, we’ll get back. </h2>
             <form class="actual-form">
                 <div class="input-rows">
@@ -177,5 +183,9 @@
         </div>
     </div>
     
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

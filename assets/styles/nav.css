@@ -20,9 +20,12 @@
 
 .nav, 
 .vertical-menu {
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: center;
     background-color: #FFFFFF;
+    z-index: 2147483640;
 }
 
 .nav .content {
@@ -50,6 +53,18 @@
     text-transform: uppercase;
     text-decoration: none;
     color: #000000;
+}
+
+.nav .content .menu ul > li :hover{
+    color: #00C3FA;
+}
+
+.nav .content .menu ul > li :active{
+    color: #00C3FA;
+}
+
+.nav .vertical-menu ul > li:hover{
+    color: #00C3FA;
 }
 
 .hamburger-container,

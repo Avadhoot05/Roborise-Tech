@@ -7,15 +7,19 @@
     <link rel="stylesheet" href="./assets/styles/reset.css">
     <link rel="stylesheet" href="./assets/styles/nav.css">
     <link rel="stylesheet" href="./assets/styles/covak.css">
+    <link rel="stylesheet" href="./assets/styles/footer.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+
     <script defer src="./assets/scripts/case.js"></script>
     <script defer src="./assets/scripts/nav.js"></script>
     <script defer src="./assets/scripts/loader.js"></script>
-    <base href="https://avadhoot05.github.io/Roborise-Tech/">
+    <!-- <base href="https://avadhoot05.github.io/Roborise-Tech/"> -->
 
     <title>Case Study: PPA</title>
 </head>
@@ -63,7 +67,7 @@
             <h1 class="heading">Case study</h1>
             <h2 class="ppa subheading absolute">Production Process Automation for a Pharmaceutical Brand. </h2>
 
-            <p class="ppa info">The healthcare sector across the world experienced a shockwave in terms of 
+            <p class="ppa info" data-aos="fade-up">The healthcare sector across the world experienced a shockwave in terms of 
                 hospitalization & production of necessary drugs/testing kits in 2019-20 as we were hit by 
                 he Corona Virus pandemic. The need for covid testing increased exponentially everywhere. Along 
                 with the RTPCR tests, which gave the results in a couple of days, the development of Rapid Antigen 
@@ -75,14 +79,15 @@
                 which ultimately increased their production with extra provided ease in the production process. 
             </p>
             <div class="link-container">
-                <a class="link">See How</a>    
+                <a class="link" href="#ppa-information">See How</a>   
+                <a class="link" href="#ppa-information"><img loading="lazy" alt="go to" src="./assets/media/nav/expand.png" width="20" height="20"> </a>    
             </div>
             
         </div>
     </div>
 
-    <div class="information">
-        <div class="container">
+    <div id="ppa-information" class="information">
+        <div class="container" data-aos="fade-up">
 
             <div class="challenges">
                 <h3 class="subheading">Challenges</h3>
@@ -138,5 +143,11 @@
             </div>
         </div>
     </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 </html>

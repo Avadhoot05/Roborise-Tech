@@ -2,28 +2,29 @@ function OnResize() {
     console.log(">>>resize");
     if(window.location.href.indexOf("industries") != -1)
     {
-        const rect = industryHead.getBoundingClientRect();
+        let rect = industryHead.getBoundingClientRect();
         industrySubHead.style.top = rect.bottom + 30 + "px";
     }
     else
     {
         if(covakHead && covakinfo)
         {
-            const rect = covakHead.getBoundingClientRect();
+            let rect = covakHead.getBoundingClientRect();
             covakinfo.style.marginTop = rect.height + 50 + "px";
             return;
         }
     
         if(ppaHead && ppainfo)
         {
-            const rect = ppaHead.getBoundingClientRect();
+            let rect = ppaHead.getBoundingClientRect();
+            console.log(rect.height);
             ppainfo.style.marginTop = rect.height + 50 + "px";
             return;
         }
     
         if(packHead && packinfo)
         {
-            const rect = packHead.getBoundingClientRect();
+            let rect = packHead.getBoundingClientRect();
             packinfo.style.marginTop = rect.height + 50 + "px";
             return;
         }
@@ -47,4 +48,5 @@ else
 
 
 window.addEventListener("resize", OnResize);
-OnResize();
+
+    OnResize();

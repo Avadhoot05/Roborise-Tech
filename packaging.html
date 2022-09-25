@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="./assets/styles/reset.css">
     <link rel="stylesheet" href="./assets/styles/nav.css">
     <link rel="stylesheet" href="./assets/styles/covak.css">
+    <link rel="stylesheet" href="./assets/styles/footer.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,7 +18,7 @@
     <script defer src="./assets/scripts/case.js"></script>
     <script defer src="./assets/scripts/nav.js"></script>
     <script defer src="./assets/scripts/loader.js"></script>
-    <base href="https://avadhoot05.github.io/Roborise-Tech/">
+    <!-- <base href="https://avadhoot05.github.io/Roborise-Tech/"> -->
 
     <title>Case Study: PPA</title>
 </head>
@@ -61,8 +64,8 @@
     <div class="main">
         <div class="container">
             <h1 class="heading">Case study</h1>
-            <h2 class="pack subheading absolute">Boosting the Packaging Process for India’s leading Biotech Brand.</h2>
-            <p class="pack info">As the world got affected by Covid19, the need for covid testing arose 
+            <h2 class="pack subheading absolute" >Boosting the Packaging Process for India’s leading Biotech Brand.</h2>
+            <p class="pack info"  data-aos="fade-up">As the world got affected by Covid19, the need for covid testing arose 
                 enormously across the globe. Considering the fact that the RTPCR tests gave the results in 
                 couple of days, there started the development of Rapid Antigen (RAT) Covid testing kits. 
                 A rapid antigen test is a quick home test to check if you may have COVID-19 and provides 
@@ -73,13 +76,14 @@
                 resulted in boosting their production metrics and catering to the needs of the market more efficiently.  
             </p>
             <div class="link-container">
-                <a class="link">See How</a>    
+                <a class="link" href="#packaging-information">See How</a>
+                <a class="link" href="#packaging-information"><img loading="lazy" alt="go to" src="./assets/media/nav/expand.png" width="20" height="20"> </a>    
             </div>
         </div>
     </div>
 
-    <div class="information">
-        <div class="container">
+    <div id="packaging-information" class="information">
+        <div class="container" data-aos="fade-up">
 
             <div class="challenges">
                 <h3 class="subheading">Challenges</h3>
@@ -146,5 +150,10 @@
             </div>
         </div>
     </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
