@@ -31,12 +31,16 @@
     height: auto;
 }
 
+.footer .link-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #02C2F7;
+    padding: 3rem;
+}
+
 .footer .quick-links{
     display: flex;
     justify-content: space-between;
-    background-color: #02C2F7;
-    padding: 3rem;
-
 }
 
 .footer .links{
@@ -85,6 +89,47 @@
     cursor: pointer;
 }
 
+.footer .follow-text{
+    color: #FFFFFF;
+    margin-top: 15px;
+    font-size: 1rem;
+}
+
+.footer .socials{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer .socials > img {
+    margin: 5px 0 5px 5px;
+}
+
+.copyright-container{
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.footer .copyright, 
+.footer .MII{
+    font-size: 0.8rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.startup {
+    display: none;
+    /* display: flex;
+    align-items: center;
+    justify-content: flex-end; */
+}
+
+.startup > img{
+    width: 150px;
+    height: auto;
+}
+
+
 @media screen and (max-width: 500px) {
     .footer > div{
         width: inherit;
@@ -105,12 +150,38 @@
     .footer-img > img {
         width: 50%;
     }
+
+    .footer .socials{
+        justify-content: center;
+    }
+
+    .copyright-container{
+        flex-direction: column;
+        margin-top: 10px;
+        align-items: center;
+    }
+
+    .startup {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .startup > img{
+        width: 110px;
+        height: auto;
+    }
+
+    .footer .copyright, 
+    .footer .MII {
+        text-align: center;
+    }
 }
 
 @media screen and (min-width: 500px) and (max-width: 768px) {
     .footer .links a{
         font-size: 0.7rem;
-        line-height: 1.5rem;
+        line-height: 2.5rem;
         margin: unset;
     }
 
@@ -120,6 +191,20 @@
     }
 
     .footer .connect .second {
+        font-size: 0.6rem;
+    }
+
+    #get-in-touch-btn{
+        padding: 7px 15px 7px 40px;
+    }
+
+    .copyright-container{
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .footer .copyright, 
+    .footer .MII {
         font-size: 0.6rem;
     }
 }
