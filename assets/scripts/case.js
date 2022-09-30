@@ -3,6 +3,7 @@ function OnResize() {
     if(window.location.href.indexOf("industries") != -1)
     {
         let rect = industryHead.getBoundingClientRect();
+        console.log(rect);
         industrySubHead.style.top = rect.bottom + 30 + "px";
     }
     else

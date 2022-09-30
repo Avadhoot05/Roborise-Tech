@@ -7,6 +7,9 @@
     outline: none;
 }
 
+body {
+    background: linear-gradient(180deg, #00000049 0%, #b4b4b456 32%, #ffffff9d 100%), url("../media/contact/contact.jpg");
+}
 .container{
     width: 80%;
 }
@@ -19,7 +22,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #a3f8e3;
+    background: transparent;
 }
 
 .form-container {
@@ -62,6 +65,8 @@
     height: 62px;
     margin-bottom: 62px;
     font-size: 24px;
+    background: transparent;
+    color: #000000;
 }
 
 .form .actual-form .textarea{

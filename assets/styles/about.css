@@ -233,7 +233,7 @@ html, body {
 .partners{
     display: flex;
     justify-content: center;
-    background-color: #000000;
+    background: url("../media/about/backg.png"), #000;
     padding-top: 6rem;
     padding-bottom: 6rem;
 }
@@ -260,6 +260,7 @@ html, body {
     border-radius: 200px;
     margin-top: 3rem;
     margin-bottom: 2.5rem;
+    padding: 1rem 2rem;
 }
   /* Slider */
   
@@ -280,11 +281,11 @@ html, body {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-            user-select: none;
+    user-select: none;
     -webkit-touch-callout: none;
     -khtml-user-select: none;
     -ms-touch-action: pan-y;
-        touch-action: pan-y;
+    touch-action: pan-y;
     -webkit-tap-highlight-color: transparent;
 }
 
@@ -321,7 +322,8 @@ html, body {
     position: relative;
     top: 0;
     left: 0;
-    display: block;
+    display: flex;
+    align-items: center;
 }
 .slick-track:before,
 .slick-track:after

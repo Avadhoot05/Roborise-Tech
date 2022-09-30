@@ -60,14 +60,23 @@ html, body {
     bottom: 0px;
     width: inherit;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.main .link {
+.main .link-container .link {
     font-weight: 500;
     font-size: 1rem;
     line-height: 1.5rem;
     color: #000000;
     cursor: pointer;
+    text-decoration: none;
+}
+
+.main .link-container .link:hover {
+    transform: scale(1.01);
 }
 
 /* SECTOR */
@@ -100,7 +109,7 @@ html, body {
 
 .content-container{
     padding: 5rem 6rem;
-    background-color: #000000;
+    background:  url("../media/industry/sector.png"), #000000;
 }
 
 .sector .content .info {
@@ -108,6 +117,7 @@ html, body {
     font-size: 1rem;
     line-height: 1.5rem;
     color: #FFFFFF;
+    text-align: justify;
 }
 
 .sector .img-container {
@@ -123,7 +133,12 @@ html, body {
 }
 
 
-
+.seperator{
+    width: 80%;
+    height: 1px;
+    background-color: #000000;
+    margin: 0 auto;
+}
 
 
 @media screen and (max-width: 500px) {
@@ -141,6 +156,10 @@ html, body {
         line-height: 2rem;
         top: calc(77px + 4rem);
         left: calc((100vw - 80%)/2);
+    }
+
+    .sector .heading{
+        text-align: center;
     }
 }
 
@@ -212,7 +231,7 @@ html, body {
     .sector .content .info {
         font-size: 0.8rem;
         line-height: 1.1rem;
-        text-align: center;
+        text-align: justify;
     }
 
     .content-container {
