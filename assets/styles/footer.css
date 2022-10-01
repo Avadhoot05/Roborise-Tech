@@ -57,6 +57,7 @@
     font-weight: 700;
     margin-bottom: 1.5rem;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .footer .connect{
@@ -81,13 +82,25 @@
 }
 
 #get-in-touch-btn{
+    display: inline-block;
     background: #FFFFFF;
+    color: #000000;
+    text-decoration: none;
     border: none;
     border-radius: 50px;
     padding: 10px 24px 10px 50px;
-    margin-top: 1rem;
+    margin-top: 1rem !important; 
     font-family: "popins";
     cursor: pointer;
+    font-size: 0.8rem;
+}
+
+#get-in-touch-btn:hover{
+    background-color: #eeeeee;
+}
+
+.footer .links a:hover {
+    color: #eeeeee;
 }
 
 .footer .follow-text{
@@ -99,10 +112,11 @@
 .footer .socials{
     display: flex;
     justify-content: flex-end;
+    margin-top: 0.5rem;
 }
 
 .footer .socials > a {
-    margin: 5px 0 5px 5px;
+    margin: 5px 0 5px 15px;
 }
 
 .copyright-container{
@@ -166,6 +180,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-top: 10px;
     }
 
     .startup > img{
@@ -176,6 +191,12 @@
     .footer .copyright, 
     .footer .MII {
         text-align: center;
+    }
+
+    .footer .links a{
+        font-size: 0.8rem;
+        line-height: 1rem;
+        margin-bottom: 1rem;
     }
 }
 

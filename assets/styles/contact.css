@@ -8,7 +8,7 @@
 }
 
 body {
-    background: linear-gradient(180deg, #00000049 0%, #b4b4b456 32%, #ffffff9d 100%), url("../media/contact/contact.jpg");
+    background: linear-gradient(180deg, #00000049 0%, #65656556 32%, #ffffff00 100%), url("../media/contact/contact.webp");
 }
 .container{
     width: 80%;

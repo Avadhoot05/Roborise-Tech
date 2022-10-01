@@ -109,7 +109,8 @@ html, body {
 
 .content-container{
     padding: 5rem 6rem;
-    background:  url("../media/industry/sector.png"), #000000;
+    background:  linear-gradient(180deg, #000000c0 100%, #000000b4 100%, #00000000 100%), url("../media/industry/sector.png");
+    background-size: contain;
 }
 
 .sector .content .info {
@@ -132,7 +133,6 @@ html, body {
     margin-top: 2rem;
 }
 
-
 .seperator{
     width: 80%;
     height: 1px;
@@ -140,6 +140,69 @@ html, body {
     margin: 0 auto;
 }
 
+
+
+/* ------services------ */
+.case-study {
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.case-study .heading {
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    color: #343434;
+    margin-bottom: 3.5rem;
+}
+
+.case-study .case-slider{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.case-study .card{
+    flex: 1 1 250px;
+    margin-right: 20px;
+    padding: 20px;
+    height: 100%;
+    min-height: 250px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 15px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.case-study .card-head{
+    color: #FFFFFF;
+}
+
+.case-study .card-info{
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 0.8rem;
+    line-height: 1rem;
+    text-align: left;
+}
+
+.case-study .card-covak{
+    background: linear-gradient(180deg, #000000c0 100%, #000000b4 100%, #00000000 100%), url("../media/services/case1.png");
+    background-size: contain;
+}
+
+.card-mylab, 
+.card-alas{
+    background: linear-gradient(180deg, #000000c0 100%, #000000 32%, #00000000 100%), url("../media/services/case2.png");
+    background-size: contain;
+}
 
 @media screen and (max-width: 500px) {
     .container{
@@ -160,6 +223,16 @@ html, body {
 
     .sector .heading{
         text-align: center;
+    }
+
+
+    .case-study .card{
+        margin-right: 0;
+    }
+
+    .case-study .card-info{
+        font-size: 0.8rem;
+        line-height: 1rem;
     }
 }
 

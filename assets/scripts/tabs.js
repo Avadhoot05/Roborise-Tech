@@ -1,4 +1,4 @@
-function clickHandler(e) {
+function TabclickHandler(e) {
     let id = "ecom";
     if(e)
     {
@@ -38,9 +38,46 @@ for(let i = 0; i < ids.length; i++)
     let tab = document.getElementById(ids[i]);
     if(tab)
     {
-        tab.addEventListener("click", clickHandler)
+        tab.addEventListener("click", TabclickHandler)
     }
 }
 
-clickHandler(null);
+TabclickHandler(null);
+
+
+// case study click
+
+function CardclickHandler(e){
+    if(!e)
+        return;
+
+    let cardId = e.target.id;
+
+    if(cardId == "card-covak")
+    {
+        console.log("go to covak");
+        window.location.href = "";
+        return;
+    }
+    if(cardId == "card-mylab")
+    {
+        console.log("go to mylab");
+        window.location.href = "";
+        return;
+    }
+    if(cardId == "card-alas")
+    {
+        console.log("go to alas");
+        window.location.href = "";
+        return;
+    }
+}
+
+
+const cards = document.getElementsByClassName("card");
+
+for(let i = 0; i < cards.length; i++)
+{
+    cards[i].addEventListener("click", CardclickHandler)
+}
 
