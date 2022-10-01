@@ -200,6 +200,7 @@ html, body {
 
 .case-study .card-head{
     color: #FFFFFF;
+    pointer-events: none;
 }
 
 .case-study .card-info{
@@ -208,6 +209,7 @@ html, body {
     font-size: 0.8rem;
     line-height: 1rem;
     text-align: left;
+    pointer-events: none;
 }
 
 .case-study .card-covak{
@@ -247,7 +249,7 @@ html, body {
         font-size: 2.5rem;
         line-height: 3rem;
     }
-    
+
     .case-study .card{
         margin-right: 0;
     }
