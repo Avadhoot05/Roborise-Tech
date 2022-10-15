@@ -126,7 +126,7 @@ html, body {
 
 .content-container{
     padding: 5rem 6rem;
-    background:  linear-gradient(180deg, #000000c0 100%, #000000b4 100%, #00000000 100%), url("../media/industry/sector.png");
+    background:  linear-gradient(180deg, #000000c0 100%, #000000b4 100%, #00000000 100%), url("../media/industry/sector.webp");
     background-size: contain;
 }
 

@@ -62,7 +62,7 @@ html, body {
     justify-content: center;
     padding-top: 90px;
     padding-bottom: 90px;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)) , url("../media/about/value.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)) , url("../media/about/value.webp");
 }
 
 .value .heading{
@@ -233,7 +233,7 @@ html, body {
 .partners{
     display: flex;
     justify-content: center;
-    background: url("../media/about/backg.png"), #000;
+    background: url("../media/about/backg.webp"), #000;
     padding-top: 6rem;
     padding-bottom: 6rem;
 }
