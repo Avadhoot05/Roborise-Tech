@@ -32,6 +32,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0.5rem 0;
 }
 
 .nav .content .menu ul {
@@ -40,7 +41,11 @@
 }
 
 .nav .content .menu ul > li{
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 2rem;
+}
+
+.nav .content .menu ul > li:last-child {
+    padding-right: 0;
 }
 
 .nav .vertical-menu ul > li {

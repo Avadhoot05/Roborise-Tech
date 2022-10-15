@@ -172,12 +172,12 @@ html, body {
 }
 
 #goi, #msme{
-    width: 30%;
+    width: 40%;
     height: auto;
 }
 
 #startup, #aadhar{
-    width: 40%;
+    width: 60%;
     height: auto;
 }
 
@@ -271,6 +271,8 @@ html, body {
 
 .slick-slide img {
     width: 100%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
 
 .slick-slider

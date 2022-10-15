@@ -40,7 +40,7 @@
         <div class="container">
             <div class="content">
                 <div class="logo-container">
-                    <img loading="lazy" class="logo" alt="Roborise company logo" src="./assets/media/nav/rrtlogo.png" width="70" height="70">
+                    <img loading="lazy" class="logo" alt="Roborise company logo" src="./assets/media/nav/rrtlogo.png" width="50" height="50">
                 </div>
                 <div class="menu">
                     <ul>
@@ -146,17 +146,17 @@
     <div class="form">
         <div class="container form-container" data-aos="fade-up">
             <h2 class="heading">Anything to talk about? Do let us know, we’ll get back. </h2>
-            <form class="actual-form">
+            <form class="actual-form" action="https://formsubmit.co/3f7d511ae4db0b87823fa204334b2db6" method="POST" >
                 <div class="input-rows">
-                    <input placeholder="First Name">
-                    <input placeholder="Last Name">
+                    <input name="FirstName" placeholder="First Name" required>
+                    <input name="LastName" placeholder="Last Name">
                 </div>
                 <div class="input-rows">
-                    <input placeholder="place">
-                    <input placeholder="Email">
+                    <input name="place" placeholder="place" required>
+                    <input name="email" placeholder="Email" required>
                 </div>
-                <textarea class="textarea" placeholder="message"></textarea>
-                <button class="btn">submit</button>
+                <textarea name="message" class="textarea" placeholder="message" required></textarea>
+                <button class="btn" type="submit">submit</button>
             </form>
         </div>
     </div>
