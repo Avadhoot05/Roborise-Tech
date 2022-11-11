@@ -56,19 +56,19 @@ function CardclickHandler(e){
     if(cardId == "card-covak")
     {
         console.log("go to covak");
-        window.location.href = "https://avadhoot05.github.io/Roborise-Tech/covak.html";
+        window.location.href = "https://www.roborise.in/covak.html";
         return;
     }
     if(cardId == "card-mylab")
     {
         console.log("go to mylab");
-        window.location.href = "https://avadhoot05.github.io/Roborise-Tech/packaging.html";
+        window.location.href = "https://www.roborise.in/packaging.html";
         return;
     }
     if(cardId == "card-alas")
     {
         console.log("go to alas");
-        window.location.href = "https://avadhoot05.github.io/Roborise-Tech/ppa.html";
+        window.location.href = "https://www.roborise.in/ppa.html";
         return;
     }
 }
